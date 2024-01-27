@@ -40,6 +40,7 @@ Write a function that sorts an array of integers in ascending order using the Qu
 - You must implement the Lomuto partition scheme.
 - The pivot should always be the last element of the partition being sorted.
 - You’re expected to print the array after each time you swap two elements
+
 Write in the file 3-O, the big O notations of the time complexity of the Quick sort algorithm, with 1 notation per line
 - in the best case
 - in the average case
