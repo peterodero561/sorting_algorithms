@@ -27,7 +27,7 @@ void swap(int *xp, int *yp)
 int lomuto_partition(int *array, int lo, int hi, size_t size)
 {
 	int pivot, i, j;
-	
+
 	pivot = array[hi];
 	i = lo - 1;
 	for (j = lo; j <= hi - 1; j++)
@@ -63,7 +63,7 @@ int lomuto_partition(int *array, int lo, int hi, size_t size)
 void quick_sort_helper(int *array, int lo, int hi, size_t size)
 {
 	int p;
-	
+
 	if (lo < hi)
 	{
 		p = lomuto_partition(array, lo, hi, size);
@@ -85,5 +85,5 @@ void quick_sort(int *array, size_t size)
 {
 	if (array == NULL || size < 2)
 		return;
-	quick_sort_helper(array, 0, size -1, size);
+	quick_sort_helper(array, 0, size - 1, size);
 }
